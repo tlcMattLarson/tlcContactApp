@@ -280,6 +280,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Models\ContactModel.edmx.sql" />
     <Content Include="Models\ContactModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ContactModel.vb</LastGenOutput>

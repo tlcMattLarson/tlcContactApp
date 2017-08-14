@@ -15,5 +15,6 @@ Partial Public Class Contact
     Public Property FirstName As String
     Public Property LastName As String
     Public Property Phone As String
+    Public Property Email As String
 
 End Class
