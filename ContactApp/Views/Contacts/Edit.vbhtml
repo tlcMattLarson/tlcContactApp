@@ -59,6 +59,5 @@ End Using
 </div>
 
 @Section Scripts 
-    @Scripts.Render("~/bundles/jqueryval")
-    @Scripts.Render("~/Scripts/Add-Edit.js")
+    
 End Section

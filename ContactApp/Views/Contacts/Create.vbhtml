@@ -12,6 +12,7 @@ End Code
         <h4>Contact</h4>
         <hr />
         @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
+
         <div class="form-group">
             @Html.LabelFor(Function(model) model.FirstName, htmlAttributes:=New With {.class = "control-label col-md-2"})
             <div class="col-md-10">
@@ -57,6 +58,5 @@ End Using
 </div>
 
 @Section Scripts 
-    @Scripts.Render("~/bundles/jqueryval")
-    @Scripts.Render("~/Scripts/Add-Edit.js")
+    
 End Section

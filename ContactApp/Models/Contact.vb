@@ -9,12 +9,22 @@
 
 Imports System
 Imports System.Collections.Generic
+Imports System.ComponentModel.DataAnnotations
 
 Partial Public Class Contact
     Public Property Id As Integer
+
+    <Required(ErrorMessage:="First Name is required.")>
     Public Property FirstName As String
+
+    <Required(ErrorMessage:="Last Name is required")>
     Public Property LastName As String
+
+    <Required(ErrorMessage:="Phone is required"), StringLength(10, ErrorMessage:="Phone must be 10 characters or less")>
     Public Property Phone As String
+
+    <Required(ErrorMessage:="Email is required")>
+    <EmailAddress(ErrorMessage:="Invalid Email")>
     Public Property Email As String
 
 End Class
