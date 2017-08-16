@@ -46,11 +46,11 @@ Namespace Controllers
         ' GET: Contacts/Edit/5
         Function Edit(ByVal id As Integer?) As ActionResult
             If IsNothing(id) Then
-                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+                Return RedirectToAction("Index")
             End If
             Dim contact As Contact = db.Contacts.Find(id)
             If IsNothing(contact) Then
-                Return HttpNotFound()
+                Return RedirectToAction("Index")
             End If
             Return View(contact)
         End Function
@@ -72,7 +72,7 @@ Namespace Controllers
         ' GET: Contacts/Delete/5
         Function Delete(ByVal id As Integer?) As ActionResult
             If IsNothing(id) Then
-                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+                Return RedirectToAction("Index")
             End If
             Dim contact As Contact = db.Contacts.Find(id)
             If IsNothing(contact) Then
