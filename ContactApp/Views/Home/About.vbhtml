@@ -53,8 +53,17 @@ End Code
     <h3>Finishing Up</h3>
     <p>
         With the core functionality implemented I looked towards making the project the best it could be. I updated the home page to 
-        include a working navigation menu and modified the main content to fit the project. Then I mimicked what I could see for 
-        formatting to make this "About" page.
+        include a working navigation menu and modified the main content to fit the project.
+    </p>
+    <p>
+        I noticed that the project included the jQuery validate library so I decided to implement the validation bonus features. I 
+        figured it would be easy as I have used that library before. After my initial implementation I noticed that the validation was 
+        behaving differently on the create and edit pages. I believe this was because one of the pages was using the built-in 
+        unobtrusive validation. After learning how that worked, I removed my code in favor of adding the validation into the model.
+    </p>
+    <p>
+        Finally, I wanted to change how the app worked if you tried to edit/delete an item that did not exist (i.e. an id that was out 
+        of range). I changed it to simply redirect back to the list in these situation to avoid the error message.
     </p>
     
 </div>

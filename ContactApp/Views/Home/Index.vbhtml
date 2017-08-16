@@ -17,6 +17,11 @@ End Code
                 <li>Add email addresses to the model/database</li>
                 <li>A page to add/view/delete/edit contacts</li>
             </ul>
+            Bonus features include:
+            <ul>
+                <li>Responsive Design</li>
+                <li>All validation requirements</li>
+            </ul>
         </p>
         @Html.ActionLink("Contacts", "Index", "Contacts", New With {.area = ""}, New With {.class = "btn btn-default"})
     </div>
